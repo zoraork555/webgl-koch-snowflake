@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>Ashton Johnson, CS535, Project #1</title>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+
+void
+main()
+{
+    gl_Position = vPosition;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+
+void
+main()
+{
+    gl_FragColor = vec4(0.5, 0.5, 1.0, 1.0);
+}
+</script>
+
+<form>    
+    <label for="str">&nbsp;&nbsp;0&emsp;&emsp;&emsp;5&emsp;&emsp;&emsp;10</label><br>
+    <input type="range" id="slider" name="num" max="10" min="0" step="1" value="0"><br>
+    <input type="submit" id="submitButton" value="Submit Subdivisions">
+</form>
+<p></p>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="snowflake.js"></script>
+</head>   
+
+<body style="background-color:#888888">
+<canvas id="gl-canvas" width="512" height="512">
+Oops ... your browser doesn't support the HTML5 canvas element
+</canvas>
+</body>
+</html>
+
