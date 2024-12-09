@@ -1,5 +1,3 @@
-// Ashton Johnson, CS535, Project #1
-
 // This project uses a recursive function to generate a Koch snowflake fractal
 // The depth of the snowflake is defined under global variable "Iterations"
 // The initial triangle's points are defined by "Vertices" 0, 1, and 2
